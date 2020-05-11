@@ -16,8 +16,7 @@ Power Appsで作成したアプリから検温結果を報告することで自�
 ### 1-1. Sharepointサイトの作成
 検温報告データをためる為のサイトを構築します。
 
-1. [Office365ホーム](https://www.office.com/)からSharepointを選択します。
-
+1. [Office365ホーム](https://www.office.com/)からSharepointを選択します。  
 ![1-1-1](https://user-images.githubusercontent.com/62197237/81519075-e970d300-937a-11ea-8989-4356e1f55a4a.JPG)
 
 1. 「サイトの作成」を選択し、「次へ」をクリックします。
