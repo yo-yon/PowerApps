@@ -6,84 +6,94 @@
 
 <h2>Power BIデスクトップをインストール</h2>
 <p>まず、準備としてPower BIデスクトップをインストールしましょう。
-<img src=https://user-images.githubusercontent.com/62197237/116348112-6fa25580-a828-11eb-9994-eaaad69af905.png width="500px">   
+ <img src=https://user-images.githubusercontent.com/62197237/116348112-6fa25580-a828-11eb-9994-eaaad69af905.png width="500px">   
 
-<ol>
-<li>Microsoftストアを開きます。<br>
-<img src=https://user-images.githubusercontent.com/62197237/116348883-d8d69880-a829-11eb-9e7e-ae2b28b9b305.png>
-</li>
-<li>検索欄で「Power BI」と検索します。<br>
-<img src=https://user-images.githubusercontent.com/62197237/116348985-03c0ec80-a82a-11eb-82de-d400c5d79f3b.png>
-</li>
-<li>Power BI Desktopをクリックします。<br>
-<img src=https://user-images.githubusercontent.com/62197237/116349221-821d8e80-a82a-11eb-84c4-664411bf587b.png>
-</li>
-<li>右上にダウンロードもしくはインストールと出ているのでクリックします。<br>
-<img src=https://user-images.githubusercontent.com/62197237/116349289-9e213000-a82a-11eb-89ba-3e0bb32946fa.png width="500px">
-</li>
-<li>インストールが終わったらこのような表示に変わります。<br>
-<img src=https://user-images.githubusercontent.com/62197237/116349323-b2652d00-a82a-11eb-8d6f-d33b48df15d5.png width="500px">
-</li>
-</ol>
+ <ol>
+  <li>Microsoftストアを開きます。<br>
+   <img src=https://user-images.githubusercontent.com/62197237/116348883-d8d69880-a829-11eb-9e7e-ae2b28b9b305.png>
+  </li>
+  <li>検索欄で「Power BI」と検索します。<br>
+   <img src=https://user-images.githubusercontent.com/62197237/116348985-03c0ec80-a82a-11eb-82de-d400c5d79f3b.png>
+  </li>
+  <li>Power BI Desktopをクリックします。<br>
+   <img src=https://user-images.githubusercontent.com/62197237/116349221-821d8e80-a82a-11eb-84c4-664411bf587b.png>
+  </li>
+  <li>右上にダウンロードもしくはインストールと出ているのでクリックします。<br>
+   <img src=https://user-images.githubusercontent.com/62197237/116349289-9e213000-a82a-11eb-89ba-3e0bb32946fa.png width="500px">
+  </li>
+  <li>インストールが終わったらこのような表示に変わります。<br>
+   <img src=https://user-images.githubusercontent.com/62197237/116349323-b2652d00-a82a-11eb-8d6f-d33b48df15d5.png width="500px">
+  </li>
+ </ol>
 </p>
 
-## SharePointリストの作成
-チャネルのタブ「ファイル」に今回の演習で使用するリストをまとめたデータを格納しています。  
-まずはそれをダウンロードして下さい。  
-
-1. SharePointを開き、リストを追加したいサイトを開きます。  
-!<img src=https://user-images.githubusercontent.com/62197237/116353195-4df99c00-a831-11eb-92fe-014b5d0c232e.png width="640px">
-1. 新規をクリックし、リストをクリックします。  
-!<img src=https://user-images.githubusercontent.com/62197237/116353178-489c5180-a831-11eb-8648-19de3523d090.png>
-1. Excelからをクリックします。  
-!<img src=https://user-images.githubusercontent.com/62197237/116353207-50f48c80-a831-11eb-9fe6-b6076a2dd575.png width="640px">  
-1. ファイルをアップロードをクリックし、最初にダウンロードしたデータを選択します。  
-!<img src=https://user-images.githubusercontent.com/62197237/116353213-5225b980-a831-11eb-80aa-cd1e03d2f9cb.png width="640px">  
-1. エクセルデータのテーブルを読み込みます。(テーブルは計4つ(ELIST、MLIST、OMLIST、LLIST))  
-!<img src=https://user-images.githubusercontent.com/62197237/116353215-5356e680-a831-11eb-891f-c94b77d94838.png width="640px">  
-※注意ポイント  
-EmployeeNoなどのように「0」始まりの数字のみの値の場合、自動的に「数値」として変換されてしまいます。  
-「0」始まりの状態を保持したい際は必ず「1行テキスト」に変換するようにしましょう。  
-1. リストの名前をテーブル名と同じものにして作成をクリックします。  
-!<img src=https://user-images.githubusercontent.com/62197237/116353218-5520aa00-a831-11eb-9f5f-7088ca7967b3.png width="640px">  
+<h2>SharePointリストの作成</h2>
+<p>チャネルのタブ「ファイル」に今回の演習で使用するリストをまとめたデータを格納しています。<br>
+まずはそれをダウンロードして下さい。<br>
+ <ol>
+  <li>SharePointを開き、リストを追加したいサイトを開きます。<br>
+   <img src=https://user-images.githubusercontent.com/62197237/116353195-4df99c00-a831-11eb-92fe-014b5d0c232e.png width="500px">
+  </li>
+  <li>新規をクリックし、リストをクリックします。<br>
+   <img src=https://user-images.githubusercontent.com/62197237/116353178-489c5180-a831-11eb-8648-19de3523d090.png>
+  </li>
+  <li>Excelからをクリックします。<br>
+   <img src=https://user-images.githubusercontent.com/62197237/116353207-50f48c80-a831-11eb-9fe6-b6076a2dd575.png width="500px">
+  </li>
+  <li>ファイルをアップロードをクリックし、最初にダウンロードしたデータを選択します。<br>
+   <img src=https://user-images.githubusercontent.com/62197237/116353213-5225b980-a831-11eb-80aa-cd1e03d2f9cb.png width="500px">
+  </li>
+  <li>エクセルデータのテーブルを読み込みます。(テーブルは計4つ(ELIST、MLIST、OMLIST、LLIST))<br>
+   <img src=https://user-images.githubusercontent.com/62197237/116353215-5356e680-a831-11eb-891f-c94b77d94838.png width="500px">
+   ※注意ポイント  
+   EmployeeNoなどのように「0」始まりの数字のみの値の場合、自動的に「数値」として変換されてしまいます。<br>
+  「0」始まりの状態を保持したい際は必ず「1行テキスト」に変換するようにしましょう。<br>
+  </li>
+  <li>リストの名前をテーブル名と同じものにして作成をクリックします。<br>
+   <img src=https://user-images.githubusercontent.com/62197237/116353218-5520aa00-a831-11eb-9f5f-7088ca7967b3.png width="500px">
+  </li>
+ </ol>
 上記2～6をテーブルの数の分だけ繰り返してください。
+</p>
 
-## Power BI Desktopでデータセットに接続してみよう。
-取り込んだリストをデータベースとして、Power BI Desktopから接続します。
- 
-1. 「データを取得」から「詳細」をクリックします。  
-!<img src=https://user-images.githubusercontent.com/62197237/116361167-a2a21480-a83b-11eb-8555-dd2d62ed5013.png width="640px">  
-因みにPower BI Desktopを立ち上げた際に表示されるオレンジ色のウィンドウで「データを取得」をクリックしても  
-同じように2の画面が表示されるのでお好みで実施してください。   
-1. 検索欄で「SharePont」と入力し「SharePoint Online リスト」をクリックし、「接続」をクリックします。   
-1. サイトURLに先ほどリストを作成したSharePointサイトのホームをクリックしURL欄に表示されたURLをコピー、  
-Power BIで表示されているウィンドウのサイトURL欄に貼り付け、「OK」をクリックします。  
-因みに実装の部分で「2.0(ベータ)」を選択するとSharePointリストで「既定のビュー」に定義された列のみを取得することが可能になります。  
-ですのであらかじめ、SharePointリストの既定のビューで今回のPower BIで集計に使う列のみの表示にしておくことで後程、Power Query画面での  
-作業工数の低減につながります。ただしPower Query画面での操作も説明をする為、今回は「1.0」を使用します。  
-[Sharepoint Online リスト v2.0 (ベータ版) に接続する(Microsoft Docs)](https://docs.microsoft.com/ja-jp/power-query/connectors/sharepointonlinelist)  
- 
-1. SharePointリストに接続する為の認証方法の選択画面が表示されます。  
-基本的には「Microsoftアカウント」を使用します。  
-「Microsoftアカウント」をクリックし、「サインイン」をクリックします。   
-1. サインインする為のアカウントを選択します。   
-1. パスワードを入力し「サインイン」をクリックします。   
-1. 画面が変わるので「接続」をクリックします。   
-※補足事項1  
-認証の種類は「匿名」「Windows」「Microsoftアカウント」の3つあります。  
-匿名は文字通り匿名でのアクセスとなります。  
-Windowsは現在ログインしているWindowsの資格情報を使用、もしくは代替の資格情報を使用してアクセスする形になります。  
-上記でも案内した通り、基本的にはMicrosoftアカウントを利用していただければ問題ありません。  
-※補足情報2  
-認証を適用する対象レベルの変更も可能です。  
-下図のように「これらの設定の適用対象レベルの選択」をクリックするとサイトの階層URLが表示され、  
-いずれかを選択することで、ここで設定する認証がどの階層のレベルに割り当てるか指定できます。  
-[SharePoint Online リストに接続する](https://docs.microsoft.com/ja-jp/power-query/connectors/sharepointonlinelist)
-
-1. これは上位の階層に対して特定の認証方法を設定したくない場合に使用します。  
-詳細はこちらのDocsを参照していただければと思います。  
-SharePoint Online リストに接続する   
-1. 先ほど追加したリストにチェックを入れ「データの変換」をクリックします。  
+<h2>Power BI Desktopでデータセットに接続してみよう。</h2>
+<p>取り込んだリストをデータベースとして、Power BI Desktopから接続します。<br>
+<ol>
+ <li>「データを取得」から「詳細」をクリックします。<br>
+  <img src=https://user-images.githubusercontent.com/62197237/116361167-a2a21480-a83b-11eb-8555-dd2d62ed5013.png width="500px"><br>
+  因みにPower BI Desktopを立ち上げた際に表示されるオレンジ色のウィンドウで「データを取得」をクリックしても<br>
+  同じように2の画面が表示されるのでお好みで実施してください。<br>
+ </li>  
+ <li>検索欄で「SharePont」と入力し「SharePoint Online リスト」をクリックし、「接続」をクリックします。</li>  
+ <li>サイトURLに先ほどリストを作成したSharePointサイトのホームをクリックしURL欄に表示されたURLをコピー、Power BIで表示されているウィンドウのサイトURL欄に貼り付け、「OK」をクリックします。<br>
+ 因みに実装の部分で「2.0(ベータ)」を選択するとSharePointリストで「既定のビュー」に定義された列のみを取得することが可能になります。<br>
+ ですのであらかじめ、SharePointリストの既定のビューで今回のPower BIで集計に使う列のみの表示にしておくことで後程、Power Query画面での<br>
+ 作業工数の低減につながります。ただしPower Query画面での操作も説明をする為、今回は「1.0」を使用します。<br>
+ <a href="https://docs.microsoft.com/ja-jp/power-query/connectors/sharepointonlinelist">Sharepoint Online リスト v2.0 (ベータ版) に接続する(Microsoft Docs)</a><br>
+ </li> 
+ <li>SharePointリストに接続する為の認証方法の選択画面が表示されます。  
+ 基本的には「Microsoftアカウント」を使用します。<br>
+「Microsoftアカウント」をクリックし、「サインイン」をクリックします。<br>
+ </li> 
+ <li>サインインする為のアカウントを選択します。</li> 
+ <li>パスワードを入力し「サインイン」をクリックします。</li> 
+ <li>画面が変わるので「接続」をクリックします。<br>
+  ※補足事項1<br>
+    認証の種類は「匿名」「Windows」「Microsoftアカウント」の3つあります。<br>
+    匿名は文字通り匿名でのアクセスとなります。<br>
+    Windowsは現在ログインしているWindowsの資格情報を使用、もしくは代替の資格情報を使用してアクセスする形になります。<br>
+    上記でも案内した通り、基本的にはMicrosoftアカウントを利用していただければ問題ありません。<br>
+  ※補足情報2<br>
+    認証を適用する対象レベルの変更も可能です。<br>
+    下図のように「これらの設定の適用対象レベルの選択」をクリックするとサイトの階層URLが表示され、<br>
+    いずれかを選択することで、ここで設定する認証がどの階層のレベルに割り当てるか指定できます。<br>
+    これは上位の階層に対して特定の認証方法を設定したくない場合に使用します。<br>
+    詳細はこちらのDocsを参照していただければと思います。<br>
+    <a href="https://docs.microsoft.com/ja-jp/power-query/connectors/sharepointonlinelist">SharePoint Online リストに接続する</a>
+ </li>
+ <li>先ほど追加したリストにチェックを入れ「データの変換」をクリックします。</li> 
+</ol>
+</p>
 
 ## Power Queryを使ってデータを成型してみよう。
 取り込んだデータから不要な列などを削除していきます。
