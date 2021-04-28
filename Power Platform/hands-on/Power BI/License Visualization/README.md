@@ -1,49 +1,49 @@
 # ライセンスの見える化-Power BIレポート作成
 ## 初めに
 これは2021/3/27に開催されたOffice365勉強会で登壇した内容のPower BI部分にフォーカスした内容です。
-![0-1](https://user-images.githubusercontent.com/62197237/116347928-1803ea00-a828-11eb-9233-91bf984f4ab9.png)  
+<img src=https://user-images.githubusercontent.com/62197237/116347928-1803ea00-a828-11eb-9233-91bf984f4ab9.png width="640px">  
 
 ## Power BIデスクトップをインストール
 まず、準備としてPower BIデスクトップをインストールしましょう。
-![1-1](https://user-images.githubusercontent.com/62197237/116348112-6fa25580-a828-11eb-9994-eaaad69af905.png)  
+<img src=https://user-images.githubusercontent.com/62197237/116348112-6fa25580-a828-11eb-9994-eaaad69af905.png width="640px">   
 
 1. Microsoftストアを開きます。  
-![1-1-1](https://user-images.githubusercontent.com/62197237/116348883-d8d69880-a829-11eb-9e7e-ae2b28b9b305.png)  
+<img src=https://user-images.githubusercontent.com/62197237/116348883-d8d69880-a829-11eb-9e7e-ae2b28b9b305.png">   
 1. 検索欄で「Power BI」と検索します。  
-![1-1-2](https://user-images.githubusercontent.com/62197237/116348985-03c0ec80-a82a-11eb-82de-d400c5d79f3b.png)  
+<img src=https://user-images.githubusercontent.com/62197237/116348985-03c0ec80-a82a-11eb-82de-d400c5d79f3b.png>  
 1. Power BI Desktopをクリックします。  
-![1-1-3](https://user-images.githubusercontent.com/62197237/116349221-821d8e80-a82a-11eb-84c4-664411bf587b.png)  
+<img src=https://user-images.githubusercontent.com/62197237/116349221-821d8e80-a82a-11eb-84c4-664411bf587b.png>  
 1. 右上にダウンロードもしくはインストールと出ているのでクリックします。  
-![1-1-4](https://user-images.githubusercontent.com/62197237/116349289-9e213000-a82a-11eb-89ba-3e0bb32946fa.png)  
+<img src=https://user-images.githubusercontent.com/62197237/116349289-9e213000-a82a-11eb-89ba-3e0bb32946fa.png width="640px">  
 1. インストールが終わったらこのような表示に変わります。  
-![1-1-5](https://user-images.githubusercontent.com/62197237/116349323-b2652d00-a82a-11eb-8d6f-d33b48df15d5.png)  
+<img src=https://user-images.githubusercontent.com/62197237/116349323-b2652d00-a82a-11eb-8d6f-d33b48df15d5.png width="640px">  
 
 ## SharePointリストの作成
 チャネルのタブ「ファイル」に今回の演習で使用するリストをまとめたデータを格納しています。  
 まずはそれをダウンロードして下さい。  
 
 1. SharePointを開き、リストを追加したいサイトを開きます。  
-![1-2-1](https://user-images.githubusercontent.com/62197237/116353195-4df99c00-a831-11eb-92fe-014b5d0c232e.png)  
+<img src=https://user-images.githubusercontent.com/62197237/116353195-4df99c00-a831-11eb-92fe-014b5d0c232e.png width="640px">  
 1. 新規をクリックし、リストをクリックします。  
-![1-2-2](https://user-images.githubusercontent.com/62197237/116353178-489c5180-a831-11eb-8648-19de3523d090.png)  
+<img src=https://user-images.githubusercontent.com/62197237/116353178-489c5180-a831-11eb-8648-19de3523d090.png width="640px">  
 1. Excelからをクリックします。  
-![1-2-3](https://user-images.githubusercontent.com/62197237/116353207-50f48c80-a831-11eb-9fe6-b6076a2dd575.png)  
+<img src=https://user-images.githubusercontent.com/62197237/116353207-50f48c80-a831-11eb-9fe6-b6076a2dd575.png width="640px">  
 1. ファイルをアップロードをクリックし、最初にダウンロードしたデータを選択します。  
-![1-2-4](https://user-images.githubusercontent.com/62197237/116353213-5225b980-a831-11eb-80aa-cd1e03d2f9cb.png)  
+<img src=https://user-images.githubusercontent.com/62197237/116353213-5225b980-a831-11eb-80aa-cd1e03d2f9cb.png width="640px">  
 1. エクセルデータのテーブルを読み込みます。(テーブルは計4つ(ELIST、MLIST、OMLIST、LLIST))  
-![1-2-5](https://user-images.githubusercontent.com/62197237/116353215-5356e680-a831-11eb-891f-c94b77d94838.png)  
+<img src=https://user-images.githubusercontent.com/62197237/116353215-5356e680-a831-11eb-891f-c94b77d94838.png width="640px">  
 ※注意ポイント  
 EmployeeNoなどのように「0」始まりの数字のみの値の場合、自動的に「数値」として変換されてしまいます。  
 「0」始まりの状態を保持したい際は必ず「1行テキスト」に変換するようにしましょう。  
 1. リストの名前をテーブル名と同じものにして作成をクリックします。  
-![1-2-6](https://user-images.githubusercontent.com/62197237/116353218-5520aa00-a831-11eb-9f5f-7088ca7967b3.png)  
+<img src=https://user-images.githubusercontent.com/62197237/116353218-5520aa00-a831-11eb-9f5f-7088ca7967b3.png width="640px">  
 上記2～6をテーブルの数の分だけ繰り返してください。
 
 ## Power BI Desktopでデータセットに接続してみよう。
 取り込んだリストをデータベースとして、Power BI Desktopから接続します。
  
 1. 「データを取得」から「詳細」をクリックします。  
-![1-3-1](https://user-images.githubusercontent.com/62197237/116361167-a2a21480-a83b-11eb-8555-dd2d62ed5013.png)  
+<img src=https://user-images.githubusercontent.com/62197237/116361167-a2a21480-a83b-11eb-8555-dd2d62ed5013.png width="640px">  
 因みにPower BI Desktopを立ち上げた際に表示されるオレンジ色のウィンドウで「データを取得」をクリックしても  
 同じように2の画面が表示されるのでお好みで実施してください。   
 1. 検索欄で「SharePont」と入力し「SharePoint Online リスト」をクリックし、「接続」をクリックします。   
