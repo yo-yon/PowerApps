@@ -1,11 +1,12 @@
-# ライセンスの見える化-Power BIレポート作成
-## 初めに
-これは2021/3/27に開催されたOffice365勉強会で登壇した内容のPower BI部分にフォーカスした内容です。
-<img src=https://user-images.githubusercontent.com/62197237/116347928-1803ea00-a828-11eb-9233-91bf984f4ab9.png width="640px">  
+<h1>ライセンスの見える化-Power BIレポート作成</h1>
+<h2>初めに</h2>
+<p>これは2021/3/27に開催されたOffice365勉強会で登壇した内容のPower BI部分にフォーカスした内容です。<br>
+<img src=https://user-images.githubusercontent.com/62197237/116347928-1803ea00-a828-11eb-9233-91bf984f4ab9.png width="500px">  
+</p>
 
-## Power BIデスクトップをインストール
-まず、準備としてPower BIデスクトップをインストールしましょう。
-<img src=https://user-images.githubusercontent.com/62197237/116348112-6fa25580-a828-11eb-9994-eaaad69af905.png width="640px">   
+<h2>Power BIデスクトップをインストール</h2>
+<p>まず、準備としてPower BIデスクトップをインストールしましょう。
+<img src=https://user-images.githubusercontent.com/62197237/116348112-6fa25580-a828-11eb-9994-eaaad69af905.png width="500px">   
 
 <ol>
 <li>Microsoftストアを開きます。<br>
@@ -18,12 +19,13 @@
 <img src=https://user-images.githubusercontent.com/62197237/116349221-821d8e80-a82a-11eb-84c4-664411bf587b.png>
 </li>
 <li>右上にダウンロードもしくはインストールと出ているのでクリックします。<br>
-<img src=https://user-images.githubusercontent.com/62197237/116349289-9e213000-a82a-11eb-89ba-3e0bb32946fa.png width="640px">
+<img src=https://user-images.githubusercontent.com/62197237/116349289-9e213000-a82a-11eb-89ba-3e0bb32946fa.png width="500px">
 </li>
 <li>インストールが終わったらこのような表示に変わります。<br>
-<img src=https://user-images.githubusercontent.com/62197237/116349323-b2652d00-a82a-11eb-8d6f-d33b48df15d5.png width="640px">
+<img src=https://user-images.githubusercontent.com/62197237/116349323-b2652d00-a82a-11eb-8d6f-d33b48df15d5.png width="500px">
 </li>
 </ol>
+</p>
 
 ## SharePointリストの作成
 チャネルのタブ「ファイル」に今回の演習で使用するリストをまとめたデータを格納しています。  
