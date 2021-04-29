@@ -278,14 +278,16 @@
 <p>これらの設定方法についてご案内します。</p>
 
 <h3>数値の書式変更</h3>
-<p>数値の書式を変更することでマトリクスの中に表示されている数値の見え方が変わります。</p>
-<p>設定変更の方法は下記の通りです。</p>
+<p>数値の書式を変更することでマトリクスの中に表示されている数値の見え方が変わります。<br />
+ 設定変更の方法は下記の通りです。
+</p>
 
 <ol>
  <li>フィールドで書式を変更したいものを選択します。<br />
   <img src="https://user-images.githubusercontent.com/62197237/116548700-97301580-a92f-11eb-95d6-2a764dfa7207.png" /><br /><br />
  </li>
- <li>画面上部のメニューに「列ツール」というタブが表示されるので、その中から$アイコンの横にある矢印をクリック、通貨記号が表示されるのでその中から円マークを選択します。<br /> 書式が通貨型になり自動的に小数点以下が表示されなくなります。<br />
+ <li>画面上部のメニューに「列ツール」というタブが表示されるので、その中から$アイコンの横にある矢印をクリック、通貨記号が表示されるのでその中から円マークを選択します。<br /> 
+  書式が通貨型になり自動的に小数点以下が表示されなくなります。<br />
   <img src="https://user-images.githubusercontent.com/62197237/116548756-a7e08b80-a92f-11eb-9bdf-ddb4e91efae9.png" width="500px" /><br /><br />
  </li>
  <li>通貨型以外の数値の小数点以下の表記を無くしたい場合は下図の「自動」の部分を「0」にすることで少数点以下無しの表記になります。<br />
@@ -310,15 +312,15 @@
 </p>
 
 <h3>各種ライセンス月額コスト(マトリクス)</h3>
-<img src="https://user-images.githubusercontent.com/62197237/116549304-453bbf80-a930-11eb-9a7b-97edc507784d.png" width="500px" /><br />
-<p>このマトリクスにはLLISTのデータを使用します。<br />
+<p><img src="https://user-images.githubusercontent.com/62197237/116549304-453bbf80-a930-11eb-9a7b-97edc507784d.png" width="500px" /><br />
+ このマトリクスにはLLISTのデータを使用します。<br />
  行：SystemName<br />
  値：CostSUM
 </p>
 
 <h3>各種ライセンス残数(マトリクス)</h3>
-<img src="https://user-images.githubusercontent.com/62197237/116549352-51278180-a930-11eb-834d-115aaa8160ee.png" width="500px" /><br />
-<p>このマトリクスにはELISTとLLISTのデータ、また残数を算出する為にメジャーを使用します。<br />
+<p><img src="https://user-images.githubusercontent.com/62197237/116549352-51278180-a930-11eb-834d-115aaa8160ee.png" width="500px" /><br />
+ このマトリクスにはELISTとLLISTのデータ、また残数を算出する為にメジャーを使用します。<br />
  行：SystemName(LLIST)<br />
  値：SystemNameのカウント(ELIST) 　<br />
  ：新しいメジャー(下記参照) <br />
@@ -329,8 +331,8 @@
 </p>
 
 <h3>拠点別、部署別のシステムコスト(積上棒グラフ)</h3>
-<img src="https://user-images.githubusercontent.com/62197237/116549393-60a6ca80-a930-11eb-87d7-d5f7f808e3a3.png" width="500px" /><br />
-<p>このグラフにはELISTのデータを使用します。<br />
+<p><img src="https://user-images.githubusercontent.com/62197237/116549393-60a6ca80-a930-11eb-87d7-d5f7f808e3a3.png" width="500px" /><br />
+ このグラフにはELISTのデータを使用します。<br />
  軸：Office 　<br />
  ：Department <br />
  凡例：SystemName<br />
@@ -339,21 +341,21 @@
 </p>
 
 <h3>導入システムのコスト割合(円グラフ)</h3>
-<img src="https://user-images.githubusercontent.com/62197237/116549426-6d2b2300-a930-11eb-88e9-b4ac00df4e63.png" width="500px" /><br />
-<p>このグラフにはELISTのデータを使用します。 <br />
+<p><img src="https://user-images.githubusercontent.com/62197237/116549426-6d2b2300-a930-11eb-88e9-b4ac00df4e63.png" width="500px" /><br />
+ このグラフにはELISTのデータを使用します。 <br />
  凡例：SystemName<br />
  値：Value
 </p>
 
 <h3>携帯総台数(カード)</h3>
-<img src="https://user-images.githubusercontent.com/62197237/116549458-787e4e80-a930-11eb-981f-6ac321c56560.png" /><br />
-<p>このカードにはOMLISTのデータを使用します。<br />
+<p><img src="https://user-images.githubusercontent.com/62197237/116549458-787e4e80-a930-11eb-981f-6ac321c56560.png" /><br />
+ このカードにはOMLISTのデータを使用します。<br />
  フィールド：Titleのカウント
 </p>
 
 <h3>予備機台数(カード)</h3>
-<img src="https://user-images.githubusercontent.com/62197237/116549493-83d17a00-a930-11eb-867d-af6553137a5f.png" /><br />
-<p>このカードにはOMLISTのデータを使用します。<br />
+<p><img src="https://user-images.githubusercontent.com/62197237/116549493-83d17a00-a930-11eb-867d-af6553137a5f.png" /><br />
+ このカードにはOMLISTのデータを使用します。<br />
  またSpareFlag列の○の数のみをカウントする必要がある為、ここでもメジャーを使用します。<br />
  フィールド：新しいメジャー<br />
  携帯の総台数を見るとTitleのカウントで算出しているのがわかると思います。<br />
@@ -363,14 +365,14 @@
 </p>
 
 <h3>携帯月額コスト(カード)</h3>
-<img src="https://user-images.githubusercontent.com/62197237/116549532-90ee6900-a930-11eb-8f7d-fe8e9811bbf2.png" /><br />
-<p>このカードにはOMLISTのデータを使用します。<br />
+<p><img src="https://user-images.githubusercontent.com/62197237/116549532-90ee6900-a930-11eb-8f7d-fe8e9811bbf2.png" /><br />
+ このカードにはOMLISTのデータを使用します。<br />
  フィールド：Value
 </p>
 
 <h3>拠点別・部署別携帯コスト(折れ線グラフ+積上棒グラフ)</h3>
-<img src="https://user-images.githubusercontent.com/62197237/116549608-a9f71a00-a930-11eb-9f6f-a5ba599de347.png" width="500px" /><br />
-<p>このカードにはOMLISTのデータを使用します。<br />
+<p><img src="https://user-images.githubusercontent.com/62197237/116549608-a9f71a00-a930-11eb-9f6f-a5ba599de347.png" width="500px" /><br />
+ このカードにはOMLISTのデータを使用します。<br />
  共有の軸：Office 　 　　<br />
  ：Dep<br />縦棒：Career<br />
  各棒の値：Value<br />
@@ -378,8 +380,8 @@
 </p>
 
 <h3>キャリア別コスト(マトリクス)</h3>
-<img src="https://user-images.githubusercontent.com/62197237/116549734-d0b55080-a930-11eb-9bb6-49d5954fcac9.png" width="500px" /><br />
-<p>このマトリクスにはOMLISTのデータを使用します。<br />
+<p><img src="https://user-images.githubusercontent.com/62197237/116549734-d0b55080-a930-11eb-9bb6-49d5954fcac9.png" width="500px" /><br />
+ このマトリクスにはOMLISTのデータを使用します。<br />
  行：Career<br />
  列：Office 　<br />
  ：Department<br />
@@ -388,8 +390,8 @@
 </p>
 
 <h3>拠点別・部署別携帯保有数(マトリクス)</h3>
-<img src="https://user-images.githubusercontent.com/62197237/116549757-d9a62200-a930-11eb-9109-38da60cad35b.png" width="500px" /><br />
-<p>このマトリクスにはOMLISTのデータを使用します。<br />
+<p><img src="https://user-images.githubusercontent.com/62197237/116549757-d9a62200-a930-11eb-9109-38da60cad35b.png" width="500px" /><br />
+ このマトリクスにはOMLISTのデータを使用します。<br />
  行：Model<br />
  列：Office 　<br />
  ：Department<br />
@@ -398,8 +400,8 @@
 </p>
 
 <h3>拠点別・部署別テザリングオプション導入数(マトリクス)</h3>
-<img src="https://user-images.githubusercontent.com/62197237/116549794-e591e400-a930-11eb-8cd4-c481c467e468.png" width="500px" /><br />
-<p>このマトリクスにはOMLISTのデータを使用します。<br />
+<p><img src="https://user-images.githubusercontent.com/62197237/116549794-e591e400-a930-11eb-8cd4-c481c467e468.png" width="500px" /><br />
+ このマトリクスにはOMLISTのデータを使用します。<br />
  行：Model<br />
  列：Office 　<br />
  ：Department<br />
