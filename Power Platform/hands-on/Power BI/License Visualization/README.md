@@ -114,100 +114,167 @@
 <p>まずはELISTから成型します。 このリストはライセンス集計に使用します。</p>
 <ol>
  <li>EmployeeNo、EDisplayName、Department、Office、LicenseA～O列を選択し、「ホーム」タブ、「列の削除」で「他の列を削除」をクリックします。 尚、注意点として列を選択する際に基本的にCtrlキーを押しながら選択していきますが列をあけて連続選択する場合(A列を選択後、C~F列を選択するなど)、連続選択列に対してShiftキーを押して選択すると、最初にCtrlキーを押して選択した列が解除されてしまいます。 この場合は連続選択する起点となる列をCtrlキーを押しながら選択したのち、Ctrlキー+Shiftキーを押しながら最終選択列をクリックすると最初に単体で選択した列が解除されず選択状態になったままになります。<br />
-  <img src="9999999999999999.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116542845-1b7e9a80-a928-11eb-8170-6008b83a9a5c.png" width="500px"><br /><br />
  </li>
  <li>LicenseA～O列を選択し、変換タブから「値の置換」をクリックします。<br />
-  <img src="9999999999999999.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116542875-23d6d580-a928-11eb-84f3-9eeeb5a2fb33.png" width="500px"><br /><br />
  </li>
  <li>検索する値を「null」、置換後を"-"にして「OK」をクリックします。<br />
-  <img src="9999999999999999.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116542904-2c2f1080-a928-11eb-857f-5ac24eb23013.png" width="500px"><br /><br />
  </li>
  <li>LicenseB列を選択し、変換タブから「値の置換」をクリックします。<br />
-  <img src="9999999999999999.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116542934-34874b80-a928-11eb-94eb-9650f3cc48be.png" width="500px"><br /><br />
  </li>
  <li>検索する値を「○」、置換後を「LicenseB」にして「OK」をクリックします。<br />
-  <img src="9999999999999999.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116543065-5da7dc00-a928-11eb-81ba-f68620a92dd5.png" width="500px"><br /><br />
  </li>
- <li>4、5をLicenseC列からO列まで実施します。置換後の値はそれぞれの列名にして下さい。<br />
-  <img src="9999999999999999.png" width="500px"><br /><br />
- </li>
+ <li>4、5をLicenseC列からO列まで実施します。置換後の値はそれぞれの列名にして下さい。<br /><br /></li>
  <li>カスタム列を追加し、LicenseA～O列をカンマ区切りで結合します。(列名をライセンス結合とする)<br />
-  <img src="9999999999999999.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116543108-6ac4cb00-a928-11eb-8c94-48019b2f658a.png" width="500px"><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116543143-757f6000-a928-11eb-859d-280871d5da4c.png" width="500px"><br /><br />
  </li>
- <li>LicenseA～O列は不要となりますので削除してしまいましょう。<br />
-  <img src="9999999999999999.png" width="500px"><br /><br />
- </li>
+ <li>LicenseA～O列は不要となりますので削除してしまいましょう。<br /><br /></li>
  <li>先ほど作成したカスタム列「ライセンス結合」を選択し、変換タブの列の分割をクリックし「区切り記号による列の分割」をクリックします。<br />
-  <img src="9999999999999999.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116543208-9051d480-a928-11eb-8250-57371458b2e3.png" width="500px"><br /><br />
  </li>
- <li>詳細オプションをクリックし分割方向を「行」にして「OK」をクリックします。<br /> もともとEmployeeNoを一意のキーとしてライセンスを横並び(列)で表示していましたがこの処理をすることでEmployeeNoに対し、どのライセンスが割り当たっているかを行単位に変換することができました。<br />
-  <img src="9999999999999999.png" width="500px"><br /><br />
+ <li>詳細オプションをクリックし分割方向を「行」にして「OK」をクリックします。<br />
+  <img src="https://user-images.githubusercontent.com/62197237/116543316-afe8fd00-a928-11eb-8c8e-f901bd106f81.png" width="500px"><br />
+   もともとEmployeeNoを一意のキーとしてライセンスを横並び(列)で表示していましたがこの処理をすることでEmployeeNoに対し、どのライセンスが割り当たっているかを行単位に変換することができました。<br /><br />
  </li>
  <li> LLISTより集計に必要な情報を持ってくるため、ELISTとLLISTを「ホーム」タブの「クエリをマージ」を使って結合します。<br />
-  <img src="9999999999999999.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116543339-b8d9ce80-a928-11eb-90b5-7ebb70799d58.png" width="500px"><br /><br />
  </li>
- <li>ELIST ライセンス結合列-LLIST Licemse列をリレーション、結合の種類は「内部(一致する行のみ)」を選択。<br />※補足情報 結合の種類によって返ってくる結果は変わってきます。<br />左外部：マージ画面上部に表示されているテーブルのすべてを残したうえで下部のテーブルは一致したもののみのデータを返す。<br /> 右外部：マージ画面上部に表示されているテーブルから下部のテーブルと一致したもの+下部のテーブルのすべてのデータを返す。<br />完全外部：マージ画面上部に表示されているテーブル、下部のテーブルすべてのデータを返す。<br />内部：マージ画面上部に表示されているテーブルから下部のテーブルと一致したもののみのデータを返す。<br />左反：マージ画面上部に表示されているテーブルで下部のテーブルと一致しないもののみのデータを返す。<br />右反：マージ画面下部に表示されているテーブルで上部のテーブルと一致しないもののみのデータを返す。<br />
-  <img src="9999999999999999.png" width="500px"><br /><br />
+ <li>ELIST ライセンス結合列-LLIST Licemse列をリレーション、結合の種類は「内部(一致する行のみ)」を選択。<br />
+  <img src="https://user-images.githubusercontent.com/62197237/116543565-fb031000-a928-11eb-9954-91c88dfe8228.png" width="500px"><br />
+  ※補足情報<br />左
+  結合の種類によって返ってくる結果は変わってきます。<br />
+  左外部：マージ画面上部に表示されているテーブルのすべてを残したうえで下部のテーブルは一致したもののみのデータを返す。<br />
+  右外部：マージ画面上部に表示されているテーブルから下部のテーブルと一致したもの+下部のテーブルのすべてのデータを返す。<br />
+  完全外部：マージ画面上部に表示されているテーブル、下部のテーブルすべてのデータを返す。<br />
+  内部：マージ画面上部に表示されているテーブルから下部のテーブルと一致したもののみのデータを返す。<br />
+  左反：マージ画面上部に表示されているテーブルで下部のテーブルと一致しないもののみのデータを返す。<br />
+  右反：マージ画面下部に表示されているテーブルで上部のテーブルと一致しないもののみのデータを返す。<br /><br />
  </li>
  <li>追加されたLLIST列の矢印マークをクリックします。<br />
-  <img src="9999999999999999.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116543606-05bda500-a929-11eb-98ac-1d51ca0eb1e4.png" width="500px"><br /><br />
  </li>
- <li>SystemName、Value、Price、NoofLicensesにチェックを入れ「元の列名を...」のチェックを外し、OKをクリックします。<br />※Value、Price、NoofLicenses列の型が文字列になっている場合は列を選択し、右クリック、メニューから「型の変更」をクリックし「整数」を選択します。<br />
-  <img src="9999999999999999.png" width="500px"><br /><br />
+ <li>SystemName、Value、Price、NoofLicensesにチェックを入れ「元の列名を...」のチェックを外し、OKをクリックします。<br />
+  <img src="https://user-images.githubusercontent.com/62197237/116543697-238b0a00-a929-11eb-8966-cf037cb72687.png" width="500px"><br />
+  ※Value、Price、NoofLicenses列の型が文字列になっている場合は列を選択し、右クリック、メニューから「型の変更」をクリックし「整数」を選択します。<br />
+  <img src="https://user-images.githubusercontent.com/62197237/116543759-3e5d7e80-a929-11eb-96ea-b363c798d733.png" width="500px"><br /><br />
  </li>
  <li>カスタム列の追加でPrice列とValue列の差を求めます。(列名をCRとする)<br />
-  <img src="9999999999999999.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116543813-4ddcc780-a929-11eb-906a-13eb89b40ceb.png" width="500px"><br /><br />
  </li>
  <li>14で作成したカスタム列の型を10進数に変更します。<br />
-  <img src="9999999999999999.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116543851-57fec600-a929-11eb-810d-a6ab17f45045.png" width="500px"><br /><br />
  </li>
 </ol>
 
 <h3>LLIST</h3>
 <p>次はLLISTを成型します。 <br />このリストはライセンス残数の計算に利用します。</p>
 <ol>
- <li>SystemName、License、Value、Price、Vendor、Uses、NoofLicenses列を選択し、「ホーム」タブ、「列の削除」で「他の列を削除」をクリックします。 <br />※Value、Price、NoofLicenses列の型が文字列になっている場合は列を選択し、右クリック、メニューから「型の変更」をクリックし「整数」を選択します。<br /><img src="9999999999999999.png" width="500px"><br /><br /></li>
- <li>カスタム列の追加でコスト合計を求めます。(列名をCostSUMとする)<br /><img src="9999999999999999.png" width="500px"><br /><br /></li>
- <li>2で作成したカスタム列を選択し、型の変更で10進数に変更します。<br /><img src="9999999999999999.png" width="500px"><br /><br /></li>
+ <li>SystemName、License、Value、Price、Vendor、Uses、NoofLicenses列を選択し、「ホーム」タブ、「列の削除」で「他の列を削除」をクリックします。 <br />
+  <img src="https://user-images.githubusercontent.com/62197237/116544640-5da8db80-a92a-11eb-9f89-f59d031dead9.png" width="500px"><br />
+  ※Value、Price、NoofLicenses列の型が文字列になっている場合は列を選択し、右クリック、メニューから「型の変更」をクリックし「整数」を選択します。<br /><br />
+ </li>
+ <li>カスタム列の追加でコスト合計を求めます。(列名をCostSUMとする)<br />
+  <img src="https://user-images.githubusercontent.com/62197237/116544664-65688000-a92a-11eb-9065-f4dc2a5cc831.png" width="500px"><br /><br />
+ </li>
+ <li>2で作成したカスタム列を選択し、型の変更で10進数に変更します。<br />
+  <img src="https://user-images.githubusercontent.com/62197237/116544689-6dc0bb00-a92a-11eb-95a6-540a90c5322f.png" width="500px"><br /><br />
+ </li>
 </ol>
 
 <h3>OMLIST</h3>
 <p>次にOMLISTを成型します。</p>
 <ol>
- <li>Title、Models、Career、User、Dep、Office、Tethering、Cflag、SpareFlag列を選択し、「ホーム」タブ、「列の削除」で「他の列を削除」をクリックします。 <br /><img src="9999999999999999.png" width="500px"><br /><br /></li>
- <li>OMLISTとMLISTを「クエリをマージ」を使って結合します。<br /><img src="9999999999999999.png" width="500px"><br /><br /></li>
- <li>OMLIST Cflag列-MLIST Title列をリレーション、結合の種類は内部。<br /><img src="9999999999999999.png" width="500px"><br /><br /></li>
- <li>追加されたMLIST列の矢印マークをクリックします。<br /><img src="9999999999999999.png" width="500px"><br /><br /></li>
- <li>Valueにチェックを入れ「元の列名を...」のチェックを外し、OKをクリックします。<br /><br /> ※Value列の型が文字列になっている場合は列を選択し、右クリック、メニューから「型の変更」をクリックし「整数」を選択します。 ここまで処理が終わったら最後に「閉じて適用」をクリックします。<br /><img src="9999999999999999.png" width="500px"><br /><br /></li>
+ <li>Title、Models、Career、User、Dep、Office、Tethering、Cflag、SpareFlag列を選択し、「ホーム」タブ、「列の削除」で「他の列を削除」をクリックします。 <br />
+  <img src="https://user-images.githubusercontent.com/62197237/116544925-b5474700-a92a-11eb-96bf-33c1b48dc6b4.png" width="500px"><br /><br />
+ </li>
+ <li>OMLISTとMLISTを「クエリをマージ」を使って結合します。<br />
+  <img src="https://user-images.githubusercontent.com/62197237/116544950-bd9f8200-a92a-11eb-9f39-bcc96efcbcf6.png" width="500px"><br /><br />
+ </li>
+ <li>OMLIST Cflag列-MLIST Title列をリレーション、結合の種類は内部。<br />
+  <img src="https://user-images.githubusercontent.com/62197237/116544970-c55f2680-a92a-11eb-8b18-75d20467fac9.png" width="500px"><br /><br />
+ </li>
+ <li>追加されたMLIST列の矢印マークをクリックします。<br />
+  <img src="https://user-images.githubusercontent.com/62197237/116544995-cee88e80-a92a-11eb-98e0-bbf654eaa225.png" width="500px"><br /><br />
+ </li>
+ <li>Valueにチェックを入れ「元の列名を...」のチェックを外し、OKをクリックします。<br />
+  <img src="https://user-images.githubusercontent.com/62197237/116545038-de67d780-a92a-11eb-9fc0-cc97eb246935.png" width="500px"><br />
+  ※Value列の型が文字列になっている場合は列を選択し、右クリック、メニューから「型の変更」をクリックし「整数」を選択します。<br /><br /> 
+ </li>
 </ol>
-
+ここまで処理が終わったら最後に「閉じて適用」をクリックします。<br />
+<img src="https://user-images.githubusercontent.com/62197237/116545152-09522b80-a92b-11eb-9caa-6c1897379bd8.png" width="500px"><br /><br />
 
 <h2>リレーションを設定しよう</h2>
 <p>取り込んだデータ間でーリレーションの設定をします。<br /> また不要なデータについては非表示しましょう。</p>
+
 <h3>ELISTとLLISTのリレーション</h3>
-<p>レポート画面で複数のデータにまたがったレポートを作成する場合、データ同士でリレーションを組むことでお互いのデータに作用するように設定ができます。 <br />今回はELIST SystemNameとLLIST SystemNameでリレーションが必要となります。 <br />ただし基本的にデータソース間で同一の列タイトルのものはリレーション対象として前段でPower Queryの実行をした際に自動的にリレーションされます。 <br />下記はリレーションが張られていなかった場合を想定しリレーションを組む方法について案内します。</p>
+<p>レポート画面で複数のデータにまたがったレポートを作成する場合、データ同士でリレーションを組むことでお互いのデータに作用するように設定ができます。 <br />
+ 今回はELIST SystemNameとLLIST SystemNameでリレーションが必要となります。 <br />
+ ただし基本的にデータソース間で同一の列タイトルのものはリレーション対象として前段でPower Queryの実行をした際に自動的にリレーションされます。 <br />
+ 下記はリレーションが張られていなかった場合を想定しリレーションを組む方法について案内します。
+</p>
+
 <ol>
-<li>Power BI Desktop画面右側の一番下のアイコンをクリックします。<br /><br /></li>
-<li>ELISTのSystemNameをLLIST SystemNameにドラッグ&amp;ドロップします。<br /><br /></li>
-<li>データ間に矢印が表示されるので右クリック、プロパティをクリックし、下図の通りになっているか確認します。</li>
+ <li>Power BI Desktop画面右側の一番下のアイコンをクリックします。<br />
+  <img src="https://user-images.githubusercontent.com/62197237/116545152-09522b80-a92b-11eb-9caa-6c1897379bd8.png" width="500px"><br /><br />
+ </li>
+ <li>ELISTのSystemNameをLLIST SystemNameにドラッグ&amp;ドロップします。<br />
+  <img src="https://user-images.githubusercontent.com/62197237/116545152-09522b80-a92b-11eb-9caa-6c1897379bd8.png" width="500px"><br /><br />
+ </li>
+ <li>データ間に矢印が表示されるので右クリック、プロパティをクリックし、下図の通りになっているか確認します。<br />
+  <img src="https://user-images.githubusercontent.com/62197237/116545152-09522b80-a92b-11eb-9caa-6c1897379bd8.png" width="500px"><br /><br />
+ </li>
 </ol>
+
 <h3>データの非表示設定</h3>
-<p>レポートを作成する際に不要なデータ列が表示されていると作成しにくいので事前に使わないとわかっているものは非表示設定にしておくことをお勧めします。<br />データごと非表示にする場合はデータソース名横に表示されている目のアイコンをクリックするとデータソースごと非表示にできます。</p>
+<p>レポートを作成する際に不要なデータ列が表示されていると作成しにくいので事前に使わないとわかっているものは非表示設定にしておくことをお勧めします。<br />
+ データごと非表示にする場合はデータソース名横に表示されている目のアイコンをクリックするとデータソースごと非表示にできます。<br />
+ <img src="https://user-images.githubusercontent.com/62197237/116545152-09522b80-a92b-11eb-9caa-6c1897379bd8.png" width="500px"><br /><br />
+</p>
+
 <h2>レポートを作成しよう</h2>
-<p>では下準備は完成したのでレポートを作成しましょう。<br />レポートの作り方はあくまで自分の好みなので必ずしもこうしなければならないというものはありません。<br />今回は勉強会で発表したものを題材に作成をしていきます。</p>
+<p>では下準備は完成したのでレポートを作成しましょう。<br />
+ レポートの作り方はあくまで自分の好みなので必ずしもこうしなければならないというものはありません。<br />
+ 今回は勉強会で発表したものを題材に作成をしていきます。
+</p>
+
 <h3>拠点別、部署別のライセンスコスト、使用数(マトリクス)</h3>
-<p>このマトリクスにはELISTのデータを使用します。<br />行：SystemName<br />列：Office <br />　：Department<br />値：Value 　<br />　：CR 　<br />　：NoofLicensesのカウント<br />※NoofLicensesをカウントにするには下記の手順でできます。</p>
+<img src="https://user-images.githubusercontent.com/62197237/116545152-09522b80-a92b-11eb-9caa-6c1897379bd8.png" width="500px"><br />
+<p>このマトリクスにはELISTのデータを使用します。<br />
+ 行：SystemName<br />
+ 列：Office <br />
+ ：Department<br />
+ 値：Value 　<br />
+ ：CR 　<br />
+ ：NoofLicensesのカウント<br />
+ ※NoofLicensesをカウントにするには下記の手順でできます。
 <ol>
-<li>フィールドの矢印をクリックします。<br /><br /></li>
-<li>「カウント」をクリックします。</li>
+ <li>フィールドの矢印をクリックします。<br />
+  <img src="https://user-images.githubusercontent.com/62197237/116545152-09522b80-a92b-11eb-9caa-6c1897379bd8.png" width="500px"><br /><br />
+ </li>
+ <li>「カウント」をクリックします。<br />
+  <img src="https://user-images.githubusercontent.com/62197237/116545152-09522b80-a92b-11eb-9caa-6c1897379bd8.png" width="500px"><br /><br />
+ </li>
 </ol>
-<p>列にOfficeとDepartmentを入れることによってドリルダウンで切り替えができます。<br />上記の形でそれぞれのフィールドを入れると下図のような感じになります。<br />画像<br />上記の完成形のデータと比較すると下記のようなことが異なっていると思います。</p>
+</p>
+
+<p>列にOfficeとDepartmentを入れることによってドリルダウンで切り替えができます。<br />
+ 上記の形でそれぞれのフィールドを入れると下図のような感じになります。<br />
+ <img src="https://user-images.githubusercontent.com/62197237/116545152-09522b80-a92b-11eb-9caa-6c1897379bd8.png" width="500px"><br /><br />
+ 上記の完成形のデータと比較すると下記のようなことが異なっていると思います。<br />
 <ul>
-<li> ValueとCRが円表記になっておらず、小数点第2位まで表示されている(数値の書式が違っている)</li>
-<li> フィールドのタイトルが違う</li>
-<li> タイトルがない</li>
-<li> 罫線がない</li>
+ <li> ValueとCRが円表記になっておらず、小数点第2位まで表示されている(数値の書式が違っている)</li>
+ <li> フィールドのタイトルが違う</li>
+ <li> タイトルがない</li>
+ <li> 罫線がない</li>
 </ul>
+</p>
+
 <p>これらの設定方法についてご案内します。</p>
 <h3>数値の書式変更</h3>
 <p>数値の書式を変更することでマトリクスの中に表示されている数値の見え方が変わります。</p>
