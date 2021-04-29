@@ -221,20 +221,20 @@
 
 <ol>
  <li>Power BI Desktop画面右側の一番下のアイコンをクリックします。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116545152-09522b80-a92b-11eb-9caa-6c1897379bd8.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116546977-415a6e00-a92d-11eb-902e-77f0cddf53ee.png"><br /><br />
  </li>
  <li>ELISTのSystemNameをLLIST SystemNameにドラッグ&amp;ドロップします。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116545152-09522b80-a92b-11eb-9caa-6c1897379bd8.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116547014-4a4b3f80-a92d-11eb-9a14-f2901ad79f34.png" width="500px"><br /><br />
  </li>
  <li>データ間に矢印が表示されるので右クリック、プロパティをクリックし、下図の通りになっているか確認します。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116545152-09522b80-a92b-11eb-9caa-6c1897379bd8.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116547040-53d4a780-a92d-11eb-9994-9a5d7bd74b31.png" width="500px"><br /><br />
  </li>
 </ol>
 
 <h3>データの非表示設定</h3>
 <p>レポートを作成する際に不要なデータ列が表示されていると作成しにくいので事前に使わないとわかっているものは非表示設定にしておくことをお勧めします。<br />
  データごと非表示にする場合はデータソース名横に表示されている目のアイコンをクリックするとデータソースごと非表示にできます。<br />
- <img src="https://user-images.githubusercontent.com/62197237/116545152-09522b80-a92b-11eb-9caa-6c1897379bd8.png" width="500px"><br /><br />
+ <img src="https://user-images.githubusercontent.com/62197237/116547075-60590000-a92d-11eb-87cb-5acad6742495.png" width="500px"><br /><br />
 </p>
 
 <h2>レポートを作成しよう</h2>
@@ -244,7 +244,7 @@
 </p>
 
 <h3>拠点別、部署別のライセンスコスト、使用数(マトリクス)</h3>
-<img src="https://user-images.githubusercontent.com/62197237/116545152-09522b80-a92b-11eb-9caa-6c1897379bd8.png" width="500px"><br />
+<img src="https://user-images.githubusercontent.com/62197237/116547772-49ff7400-a92e-11eb-9fca-bd2bef2a39ce.png" width="500px"><br />
 <p>このマトリクスにはELISTのデータを使用します。<br />
  行：SystemName<br />
  列：Office <br />
@@ -255,17 +255,17 @@
  ※NoofLicensesをカウントにするには下記の手順でできます。
 <ol>
  <li>フィールドの矢印をクリックします。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116545152-09522b80-a92b-11eb-9caa-6c1897379bd8.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116547783-4c61ce00-a92e-11eb-9ae1-c60f395f7c8b.png" width="500px"><br /><br />
  </li>
  <li>「カウント」をクリックします。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116545152-09522b80-a92b-11eb-9caa-6c1897379bd8.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116547788-4ec42800-a92e-11eb-9dd4-67e5cb034376.png"><br /><br />
  </li>
 </ol>
 </p>
 
 <p>列にOfficeとDepartmentを入れることによってドリルダウンで切り替えができます。<br />
  上記の形でそれぞれのフィールドを入れると下図のような感じになります。<br />
- <img src="https://user-images.githubusercontent.com/62197237/116545152-09522b80-a92b-11eb-9caa-6c1897379bd8.png" width="500px"><br /><br />
+ <img src="https://user-images.githubusercontent.com/62197237/116547818-55529f80-a92e-11eb-8c91-28844e2c386b.png" width="500px"><br /><br />
  上記の完成形のデータと比較すると下記のようなことが異なっていると思います。<br />
 <ul>
  <li> ValueとCRが円表記になっておらず、小数点第2位まで表示されている(数値の書式が違っている)</li>
@@ -276,45 +276,64 @@
 </p>
 
 <p>これらの設定方法についてご案内します。</p>
+
 <h3>数値の書式変更</h3>
 <p>数値の書式を変更することでマトリクスの中に表示されている数値の見え方が変わります。</p>
 <p>設定変更の方法は下記の通りです。</p>
+
 <ol>
-<li>フィールドで書式を変更したいものを選択します。<br /><br /></li>
-<li>画面上部のメニューに「列ツール」というタブが表示されるので、その中から$アイコンの横にある矢印をクリック、通貨記号が表示されるのでその中から円マークを選択します。<br /> 書式が通貨型になり自動的に小数点以下が表示されなくなります。<br /><br /></li>
-<li>通貨型以外の数値の小数点以下の表記を無くしたい場合は下図の「自動」の部分を「0」にすることで少数点以下無しの表記になります。</li>
+ <li>フィールドで書式を変更したいものを選択します。<br /><br /></li>
+ <li>画面上部のメニューに「列ツール」というタブが表示されるので、その中から$アイコンの横にある矢印をクリック、通貨記号が表示されるのでその中から円マークを選択します。<br /> 書式が通貨型になり自動的に小数点以下が表示されなくなります。<br /><br /></li>
+ <li>通貨型以外の数値の小数点以下の表記を無くしたい場合は下図の「自動」の部分を「0」にすることで少数点以下無しの表記になります。</li>
 </ol>
+
 <h3>フィールドのタイトル変更</h3>
 <p>マトリクスを選択した状態でフィールドの部分でタイトル部分をダブルクリックをすると名称変更が可能です。</p>
+
 <h3>タイトルの追加</h3>
 <p>タイトルに関しては「書式」で変更ができます。 タイトルをオンにし、タイトルテキストを入力するとタイトルをつけることができます。</p>
+
 <h3>罫線の追加</h3>
 <p>罫線に関しては「書式」で変更ができます。 罫線をオンにするとマトリクスに罫線をつけることができます。</p>
+
 <h3>各種ライセンス月額コスト(マトリクス)</h3>
 <p>このマトリクスにはLLISTのデータを使用します。<br />行：SystemName<br />値：CostSUM</p>
+
 <h3>各種ライセンス残数(マトリクス)</h3>
 <p>このマトリクスにはELISTとLLISTのデータ、また残数を算出する為にメジャーを使用します。<br />行：SystemName(LLIST)<br />値：SystemNameのカウント(ELIST) 　<br />　：新しいメジャー(下記参照) <br />新しいメジャーというのは取り込んだデータを基に新たな集計結果を算出する為の定義です。<br />わかりやすく言えば集計されたデータ列を追加する感じです。<br />今回は保有しているライセンス数(LLIST NoofLicenses列)から使用済ライセンス数(ELIST SystemNameのカウント)を引き算するのでメジャーに入れる数式は下記になります。<br />メジャー = SUM(LLIST[NoofLicenses])-COUNTA(ELIST[SystemName])</p>
+
 <h3>拠点別、部署別のシステムコスト(積上棒グラフ)</h3>
 <p>このグラフにはELISTのデータを使用します。<br />軸：Office 　<br />　：Department <br />凡例：SystemName<br />値：Value<br />軸にOfficeとDepartmentを入れることによってドリルダウンで切り替えができます。</p>
+
 <h3>導入システムのコスト割合(円グラフ)</h3>
 <p>このグラフにはELISTのデータを使用します。 <br />凡例：SystemName<br />値：Value</p>
+
 <h3>携帯総台数(カード)</h3>
 <p>このカードにはOMLISTのデータを使用します。<br />フィールド：Titleのカウント</p>
+
 <h3>予備機台数(カード)</h3>
 <p>このカードにはOMLISTのデータを使用します。<br />またSpareFlag列の○の数のみをカウントする必要がある為、ここでもメジャーを使用します。<br />フィールド：新しいメジャー<br />携帯の総台数を見るとTitleのカウントで算出しているのがわかると思います。<br />ですので考え方としてはSpareFlagに〇が入力されているTitle列をカウントする形になります。<br />つまり数式は下記のような感じになります。<br />予備機 = CALCULATE(COUNTA(OMLIST[Title]),OMLIST[SpareFlag] IN {​​​​​​​ "○" }​​​​​​​)</p>
+
 <h3>携帯月額コスト(カード)</h3>
 <p>このカードにはOMLISTのデータを使用します。<br />フィールド：Value</p>
+
 <h3>拠点別・部署別携帯コスト(折れ線グラフ+積上棒グラフ)</h3>
 <p>このカードにはOMLISTのデータを使用します。<br />共有の軸：Office 　 　　<br />　　　　：Dep<br />縦棒：Career<br />各棒の値：Value<br />線の値：Titleのカウント</p>
+
 <h3>キャリア別コスト(マトリクス)</h3>
 <p>このマトリクスにはOMLISTのデータを使用します。<br />行：Career<br />列：Office 　<br />　：Department<br />値：Value<br />列にOfficeとDepartmentを入れることによってドリルダウンで切り替えができます。</p>
+
 <h3>拠点別・部署別携帯保有数(マトリクス)</h3>
 <p>このマトリクスにはOMLISTのデータを使用します。<br /> 行：Model<br />列：Office 　<br />　：Department<br />値：Value<br />列にOfficeとDepartmentを入れることによってドリルダウンで切り替えができます。</p>
+
 <h3>拠点別・部署別テザリングオプション導入数(マトリクス)</h3>
 <p>このマトリクスにはOMLISTのデータを使用します。<br />行：Model<br />列：Office 　<br />　：Department<br />値：Tethering <br />列にOfficeとDepartmentを入れることによってドリルダウンで切り替えができます。<br /> あとは体裁を整えればレポート完成です。</p>
+
 <h2>レポートの発行</h2>
 <p>レポートの設定が完了しましたがまだこの時点ではクラウド上のPower BIにレポートが発行されていません。<br />画面上部からレポートの発行をしましょう。</p>
+
 <h2>データセットを自動更新しよう</h2>
 <p>クラウド上にレポートをアップするところまでは完了しましたが最後にデータセットの自動更新設定が必要です。<br />レポートの発行でアップしたワークスペースを開き、更新のスケジュール設定アイコンをクリックします。<br />更新頻度や時刻などを設定し、適用をクリックすれば設定完了です。</p>
+
 <h2>作成後の注意</h2>
 <p>Power BIにはレポートをWeb公開する設定があります。<br />これは外部への一般公開のことです。<br />Power BIでは会社のクリティカルな情報を扱うことが多くなるかと思いますので、間違って一般公開をしてしまわないよう 十分注意をして下さい。<br />Power BIのWeb公開と抑止についてわかりやすくまとめた記事がありますので参考にして下さい。<br />[Power BIのWeb公開と抑止 - Qiita]https://qiita.com/ishiayaya/items/faddbe227cea8df674b2)</p>
