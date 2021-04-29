@@ -61,7 +61,7 @@
   <li>「データを取得」から「詳細」をクリックします。<br />
    <img src="https://user-images.githubusercontent.com/62197237/116361167-a2a21480-a83b-11eb-8555-dd2d62ed5013.png" /><br /><br />
    因みにPower BI Desktopを立ち上げた際に表示されるオレンジ色のウィンドウで「データを取得」をクリックしても同じように2の画面が表示されるのでお好みで実施してください。<br />
-   <img src="https://user-images.githubusercontent.com/62197237/116491859-d3368c80-a8d5-11eb-9274-58ceabb1de81.png" width="500px"><br /><br />
+   <img src="https://user-images.githubusercontent.com/62197237/116491859-d3368c80-a8d5-11eb-9274-58ceabb1de81.png" width="500px" /><br /><br />
   </li>
   <li>検索欄で「SharePont」と入力し「SharePoint Online リスト」をクリックし、「接続」をクリックします。<br />
     <img src="https://user-images.githubusercontent.com/62197237/116493392-9d93a280-a8d9-11eb-931d-f7260b8ae142.png" width="500px" /><br /><br />
@@ -89,21 +89,21 @@
     【補足事項1】<br /> 
     認証の種類は「匿名」「Windows」「Microsoftアカウント」の3つあります。<br /> 
     匿名は文字通り匿名でのアクセスとなります。<br />
-    <img src="https://user-images.githubusercontent.com/62197237/116493671-29a5ca00-a8da-11eb-9a21-bb630bd9d0ca.png" width="500px"><br />
+    <img src="https://user-images.githubusercontent.com/62197237/116493671-29a5ca00-a8da-11eb-9a21-bb630bd9d0ca.png" width="500px" /><br />
     Windowsは現在ログインしているWindowsの資格情報を使用、もしくは代替の資格情報を使用してアクセスする形になります。<br />
-    <img src="https://user-images.githubusercontent.com/62197237/116493750-56f27800-a8da-11eb-9bbd-db99c39936ae.png" width="500px"><br />
+    <img src="https://user-images.githubusercontent.com/62197237/116493750-56f27800-a8da-11eb-9bbd-db99c39936ae.png" width="500px" /><br />
     上記でも案内した通り、基本的にはMicrosoftアカウントを利用していただければ問題ありません。<br /><br /> 
     【補足情報2】<br /> 
     認証を適用する対象レベルの変更も可能です。<br /> 
     下図のように「これらの設定の適用対象レベルの選択」をクリックするとサイトの階層URLが表示され、<br /> 
     いずれかを選択することで、ここで設定する認証がどの階層のレベルに割り当てるか指定できます。<br />
-    <img src="https://user-images.githubusercontent.com/62197237/116493795-6ec9fc00-a8da-11eb-856b-c5d59b936f29.png" width="500px"><br />
+    <img src="https://user-images.githubusercontent.com/62197237/116493795-6ec9fc00-a8da-11eb-856b-c5d59b936f29.png" width="500px" /><br />
     これは上位の階層に対して特定の認証方法を設定したくない場合に使用します。<br /> 
     詳細はこちらのDocsを参照していただければと思います。<br />
     <a href="https://docs.microsoft.com/ja-jp/power-query/connectors/sharepointonlinelist">SharePoint Online リストに接続する<br /><br /></a>
   </li>
   <li>先ほど追加したリストにチェックを入れ「データの変換」をクリックします。<br />
-    <img src="https://user-images.githubusercontent.com/62197237/116493829-7be6eb00-a8da-11eb-9e54-ce094c593098.png" width="500px"><br /><br />
+    <img src="https://user-images.githubusercontent.com/62197237/116493829-7be6eb00-a8da-11eb-9e54-ce094c593098.png" width="500px" /><br /><br />
   </li>
 </ol>
 
@@ -114,38 +114,38 @@
 <p>まずはELISTから成型します。 このリストはライセンス集計に使用します。</p>
 <ol>
  <li>EmployeeNo、EDisplayName、Department、Office、LicenseA～O列を選択し、「ホーム」タブ、「列の削除」で「他の列を削除」をクリックします。 尚、注意点として列を選択する際に基本的にCtrlキーを押しながら選択していきますが列をあけて連続選択する場合(A列を選択後、C~F列を選択するなど)、連続選択列に対してShiftキーを押して選択すると、最初にCtrlキーを押して選択した列が解除されてしまいます。 この場合は連続選択する起点となる列をCtrlキーを押しながら選択したのち、Ctrlキー+Shiftキーを押しながら最終選択列をクリックすると最初に単体で選択した列が解除されず選択状態になったままになります。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116542845-1b7e9a80-a928-11eb-8170-6008b83a9a5c.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116542845-1b7e9a80-a928-11eb-8170-6008b83a9a5c.png" width="500px" /><br /><br />
  </li>
  <li>LicenseA～O列を選択し、変換タブから「値の置換」をクリックします。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116542875-23d6d580-a928-11eb-84f3-9eeeb5a2fb33.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116542875-23d6d580-a928-11eb-84f3-9eeeb5a2fb33.png" width="500px" /><br /><br />
  </li>
  <li>検索する値を「null」、置換後を"-"にして「OK」をクリックします。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116542904-2c2f1080-a928-11eb-857f-5ac24eb23013.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116542904-2c2f1080-a928-11eb-857f-5ac24eb23013.png" width="500px" /><br /><br />
  </li>
  <li>LicenseB列を選択し、変換タブから「値の置換」をクリックします。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116542934-34874b80-a928-11eb-94eb-9650f3cc48be.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116542934-34874b80-a928-11eb-94eb-9650f3cc48be.png" width="500px" /><br /><br />
  </li>
  <li>検索する値を「○」、置換後を「LicenseB」にして「OK」をクリックします。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116543065-5da7dc00-a928-11eb-81ba-f68620a92dd5.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116543065-5da7dc00-a928-11eb-81ba-f68620a92dd5.png" width="500px" /><br /><br />
  </li>
  <li>4、5をLicenseC列からO列まで実施します。置換後の値はそれぞれの列名にして下さい。<br /><br /></li>
  <li>カスタム列を追加し、LicenseA～O列をカンマ区切りで結合します。(列名をライセンス結合とする)<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116543108-6ac4cb00-a928-11eb-8c94-48019b2f658a.png" width="500px"><br />
-  <img src="https://user-images.githubusercontent.com/62197237/116543143-757f6000-a928-11eb-859d-280871d5da4c.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116543108-6ac4cb00-a928-11eb-8c94-48019b2f658a.png" width="500px" /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116543143-757f6000-a928-11eb-859d-280871d5da4c.png" width="500px" /><br /><br />
  </li>
  <li>LicenseA～O列は不要となりますので削除してしまいましょう。<br /><br /></li>
  <li>先ほど作成したカスタム列「ライセンス結合」を選択し、変換タブの列の分割をクリックし「区切り記号による列の分割」をクリックします。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116543208-9051d480-a928-11eb-8250-57371458b2e3.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116543208-9051d480-a928-11eb-8250-57371458b2e3.png" width="500px" /><br /><br />
  </li>
  <li>詳細オプションをクリックし分割方向を「行」にして「OK」をクリックします。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116543316-afe8fd00-a928-11eb-8c8e-f901bd106f81.png" width="500px"><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116543316-afe8fd00-a928-11eb-8c8e-f901bd106f81.png" width="500px" /><br />
    もともとEmployeeNoを一意のキーとしてライセンスを横並び(列)で表示していましたがこの処理をすることでEmployeeNoに対し、どのライセンスが割り当たっているかを行単位に変換することができました。<br /><br />
  </li>
  <li> LLISTより集計に必要な情報を持ってくるため、ELISTとLLISTを「ホーム」タブの「クエリをマージ」を使って結合します。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116543339-b8d9ce80-a928-11eb-90b5-7ebb70799d58.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116543339-b8d9ce80-a928-11eb-90b5-7ebb70799d58.png" width="500px" /><br /><br />
  </li>
  <li>ELIST ライセンス結合列-LLIST Licemse列をリレーション、結合の種類は「内部(一致する行のみ)」を選択。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116543565-fb031000-a928-11eb-9954-91c88dfe8228.png" width="500px"><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116543565-fb031000-a928-11eb-9954-91c88dfe8228.png" width="500px" /><br />
   ※補足情報<br />左
   結合の種類によって返ってくる結果は変わってきます。<br />
   左外部：マージ画面上部に表示されているテーブルのすべてを残したうえで下部のテーブルは一致したもののみのデータを返す。<br />
@@ -156,18 +156,18 @@
   右反：マージ画面下部に表示されているテーブルで上部のテーブルと一致しないもののみのデータを返す。<br /><br />
  </li>
  <li>追加されたLLIST列の矢印マークをクリックします。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116543606-05bda500-a929-11eb-98ac-1d51ca0eb1e4.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116543606-05bda500-a929-11eb-98ac-1d51ca0eb1e4.png" width="500px" /><br /><br />
  </li>
  <li>SystemName、Value、Price、NoofLicensesにチェックを入れ「元の列名を...」のチェックを外し、OKをクリックします。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116543697-238b0a00-a929-11eb-8966-cf037cb72687.png" width="500px"><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116543697-238b0a00-a929-11eb-8966-cf037cb72687.png" width="500px" /><br />
   ※Value、Price、NoofLicenses列の型が文字列になっている場合は列を選択し、右クリック、メニューから「型の変更」をクリックし「整数」を選択します。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116543759-3e5d7e80-a929-11eb-96ea-b363c798d733.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116543759-3e5d7e80-a929-11eb-96ea-b363c798d733.png" width="500px" /><br /><br />
  </li>
  <li>カスタム列の追加でPrice列とValue列の差を求めます。(列名をCRとする)<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116543813-4ddcc780-a929-11eb-906a-13eb89b40ceb.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116543813-4ddcc780-a929-11eb-906a-13eb89b40ceb.png" width="500px" /><br /><br />
  </li>
  <li>14で作成したカスタム列の型を10進数に変更します。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116543851-57fec600-a929-11eb-810d-a6ab17f45045.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116543851-57fec600-a929-11eb-810d-a6ab17f45045.png" width="500px" /><br /><br />
  </li>
 </ol>
 
@@ -175,14 +175,14 @@
 <p>次はLLISTを成型します。 <br />このリストはライセンス残数の計算に利用します。</p>
 <ol>
  <li>SystemName、License、Value、Price、Vendor、Uses、NoofLicenses列を選択し、「ホーム」タブ、「列の削除」で「他の列を削除」をクリックします。 <br />
-  <img src="https://user-images.githubusercontent.com/62197237/116544640-5da8db80-a92a-11eb-9f89-f59d031dead9.png" width="500px"><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116544640-5da8db80-a92a-11eb-9f89-f59d031dead9.png" width="500px" /><br />
   ※Value、Price、NoofLicenses列の型が文字列になっている場合は列を選択し、右クリック、メニューから「型の変更」をクリックし「整数」を選択します。<br /><br />
  </li>
  <li>カスタム列の追加でコスト合計を求めます。(列名をCostSUMとする)<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116544664-65688000-a92a-11eb-9065-f4dc2a5cc831.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116544664-65688000-a92a-11eb-9065-f4dc2a5cc831.png" width="500px" /><br /><br />
  </li>
  <li>2で作成したカスタム列を選択し、型の変更で10進数に変更します。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116544689-6dc0bb00-a92a-11eb-95a6-540a90c5322f.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116544689-6dc0bb00-a92a-11eb-95a6-540a90c5322f.png" width="500px" /><br /><br />
  </li>
 </ol>
 
@@ -190,24 +190,24 @@
 <p>次にOMLISTを成型します。</p>
 <ol>
  <li>Title、Models、Career、User、Dep、Office、Tethering、Cflag、SpareFlag列を選択し、「ホーム」タブ、「列の削除」で「他の列を削除」をクリックします。 <br />
-  <img src="https://user-images.githubusercontent.com/62197237/116544925-b5474700-a92a-11eb-96bf-33c1b48dc6b4.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116544925-b5474700-a92a-11eb-96bf-33c1b48dc6b4.png" width="500px" /><br /><br />
  </li>
  <li>OMLISTとMLISTを「クエリをマージ」を使って結合します。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116544950-bd9f8200-a92a-11eb-9f39-bcc96efcbcf6.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116544950-bd9f8200-a92a-11eb-9f39-bcc96efcbcf6.png" width="500px" /><br /><br />
  </li>
  <li>OMLIST Cflag列-MLIST Title列をリレーション、結合の種類は内部。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116544970-c55f2680-a92a-11eb-8b18-75d20467fac9.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116544970-c55f2680-a92a-11eb-8b18-75d20467fac9.png" width="500px" /><br /><br />
  </li>
  <li>追加されたMLIST列の矢印マークをクリックします。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116544995-cee88e80-a92a-11eb-98e0-bbf654eaa225.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116544995-cee88e80-a92a-11eb-98e0-bbf654eaa225.png" width="500px" /><br /><br />
  </li>
  <li>Valueにチェックを入れ「元の列名を...」のチェックを外し、OKをクリックします。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116545038-de67d780-a92a-11eb-9fc0-cc97eb246935.png" width="500px"><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116545038-de67d780-a92a-11eb-9fc0-cc97eb246935.png" width="500px" /><br />
   ※Value列の型が文字列になっている場合は列を選択し、右クリック、メニューから「型の変更」をクリックし「整数」を選択します。<br /><br /> 
  </li>
 </ol>
 ここまで処理が終わったら最後に「閉じて適用」をクリックします。<br />
-<img src="https://user-images.githubusercontent.com/62197237/116545152-09522b80-a92b-11eb-9caa-6c1897379bd8.png" width="500px"><br /><br />
+<img src="https://user-images.githubusercontent.com/62197237/116545152-09522b80-a92b-11eb-9caa-6c1897379bd8.png" width="500px" /><br /><br />
 
 <h2>リレーションを設定しよう</h2>
 <p>取り込んだデータ間でーリレーションの設定をします。<br /> また不要なデータについては非表示しましょう。</p>
@@ -221,20 +221,20 @@
 
 <ol>
  <li>Power BI Desktop画面右側の一番下のアイコンをクリックします。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116546977-415a6e00-a92d-11eb-902e-77f0cddf53ee.png"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116546977-415a6e00-a92d-11eb-902e-77f0cddf53ee.png" /><br /><br />
  </li>
  <li>ELISTのSystemNameをLLIST SystemNameにドラッグ&amp;ドロップします。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116547014-4a4b3f80-a92d-11eb-9a14-f2901ad79f34.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116547014-4a4b3f80-a92d-11eb-9a14-f2901ad79f34.png" width="500px" /><br /><br />
  </li>
  <li>データ間に矢印が表示されるので右クリック、プロパティをクリックし、下図の通りになっているか確認します。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116547040-53d4a780-a92d-11eb-9994-9a5d7bd74b31.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116547040-53d4a780-a92d-11eb-9994-9a5d7bd74b31.png" width="500px" /><br /><br />
  </li>
 </ol>
 
 <h3>データの非表示設定</h3>
 <p>レポートを作成する際に不要なデータ列が表示されていると作成しにくいので事前に使わないとわかっているものは非表示設定にしておくことをお勧めします。<br />
  データごと非表示にする場合はデータソース名横に表示されている目のアイコンをクリックするとデータソースごと非表示にできます。<br />
- <img src="https://user-images.githubusercontent.com/62197237/116547075-60590000-a92d-11eb-87cb-5acad6742495.png" width="500px"><br /><br />
+ <img src="https://user-images.githubusercontent.com/62197237/116547075-60590000-a92d-11eb-87cb-5acad6742495.png" width="500px" /><br /><br />
 </p>
 
 <h2>レポートを作成しよう</h2>
@@ -244,7 +244,7 @@
 </p>
 
 <h3>拠点別、部署別のライセンスコスト、使用数(マトリクス)</h3>
-<img src="https://user-images.githubusercontent.com/62197237/116547772-49ff7400-a92e-11eb-9fca-bd2bef2a39ce.png" width="500px"><br />
+<img src="https://user-images.githubusercontent.com/62197237/116547772-49ff7400-a92e-11eb-9fca-bd2bef2a39ce.png" width="500px" /><br />
 <p>このマトリクスにはELISTのデータを使用します。<br />
  行：SystemName<br />
  列：Office <br />
@@ -255,17 +255,17 @@
  ※NoofLicensesをカウントにするには下記の手順でできます。
 <ol>
  <li>フィールドの矢印をクリックします。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116547783-4c61ce00-a92e-11eb-9ae1-c60f395f7c8b.png" width="500px"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116547783-4c61ce00-a92e-11eb-9ae1-c60f395f7c8b.png" width="500px" /><br /><br />
  </li>
  <li>「カウント」をクリックします。<br />
-  <img src="https://user-images.githubusercontent.com/62197237/116547788-4ec42800-a92e-11eb-9dd4-67e5cb034376.png"><br /><br />
+  <img src="https://user-images.githubusercontent.com/62197237/116547788-4ec42800-a92e-11eb-9dd4-67e5cb034376.png" /><br /><br />
  </li>
 </ol>
 </p>
 
 <p>列にOfficeとDepartmentを入れることによってドリルダウンで切り替えができます。<br />
  上記の形でそれぞれのフィールドを入れると下図のような感じになります。<br />
- <img src="https://user-images.githubusercontent.com/62197237/116547818-55529f80-a92e-11eb-8c91-28844e2c386b.png" width="500px"><br /><br />
+ <img src="https://user-images.githubusercontent.com/62197237/116547818-55529f80-a92e-11eb-8c91-28844e2c386b.png" width="500px" /><br /><br />
  上記の完成形のデータと比較すると下記のようなことが異なっていると思います。<br />
 <ul>
  <li> ValueとCRが円表記になっておらず、小数点第2位まで表示されている(数値の書式が違っている)</li>
@@ -282,58 +282,151 @@
 <p>設定変更の方法は下記の通りです。</p>
 
 <ol>
- <li>フィールドで書式を変更したいものを選択します。<br /><br /></li>
- <li>画面上部のメニューに「列ツール」というタブが表示されるので、その中から$アイコンの横にある矢印をクリック、通貨記号が表示されるのでその中から円マークを選択します。<br /> 書式が通貨型になり自動的に小数点以下が表示されなくなります。<br /><br /></li>
- <li>通貨型以外の数値の小数点以下の表記を無くしたい場合は下図の「自動」の部分を「0」にすることで少数点以下無しの表記になります。</li>
+ <li>フィールドで書式を変更したいものを選択します。<br />
+  <img src="https://user-images.githubusercontent.com/62197237/116548700-97301580-a92f-11eb-95d6-2a764dfa7207.png" /><br /><br />
+ </li>
+ <li>画面上部のメニューに「列ツール」というタブが表示されるので、その中から$アイコンの横にある矢印をクリック、通貨記号が表示されるのでその中から円マークを選択します。<br /> 書式が通貨型になり自動的に小数点以下が表示されなくなります。<br />
+  <img src="https://user-images.githubusercontent.com/62197237/116548756-a7e08b80-a92f-11eb-9bdf-ddb4e91efae9.png" width="500px" /><br /><br />
+ </li>
+ <li>通貨型以外の数値の小数点以下の表記を無くしたい場合は下図の「自動」の部分を「0」にすることで少数点以下無しの表記になります。<br />
+  <img src="https://user-images.githubusercontent.com/62197237/116548794-b29b2080-a92f-11eb-8c8f-ba40aff88bf0.png" width="500px" /><br /><br />
+ </li>
 </ol>
 
 <h3>フィールドのタイトル変更</h3>
-<p>マトリクスを選択した状態でフィールドの部分でタイトル部分をダブルクリックをすると名称変更が可能です。</p>
+<p>マトリクスを選択した状態でフィールドの部分でタイトル部分をダブルクリックをすると名称変更が可能です。<br />
+ <img src="https://user-images.githubusercontent.com/62197237/116548842-c0e93c80-a92f-11eb-91bd-4f5b8a991072.png" /><br /><br />
+</p>
 
 <h3>タイトルの追加</h3>
-<p>タイトルに関しては「書式」で変更ができます。 タイトルをオンにし、タイトルテキストを入力するとタイトルをつけることができます。</p>
+<p>タイトルに関しては「書式」で変更ができます。 タイトルをオンにし、タイトルテキストを入力するとタイトルをつけることができます。<br />
+ <img src="https://user-images.githubusercontent.com/62197237/116548901-d0688580-a92f-11eb-807a-c1708dc4eb40.png" /><br />
+ <img src="https://user-images.githubusercontent.com/62197237/116548978-e6764600-a92f-11eb-9617-31f90a35449c.png" /><br /><br />
+</p>
 
 <h3>罫線の追加</h3>
-<p>罫線に関しては「書式」で変更ができます。 罫線をオンにするとマトリクスに罫線をつけることができます。</p>
+<p>罫線に関しては「書式」で変更ができます。 罫線をオンにするとマトリクスに罫線をつけることができます。<br />
+ <img src="https://user-images.githubusercontent.com/62197237/116549023-f4c46200-a92f-11eb-9914-a2b91e9bbe00.png" /><br />
+</p>
 
 <h3>各種ライセンス月額コスト(マトリクス)</h3>
-<p>このマトリクスにはLLISTのデータを使用します。<br />行：SystemName<br />値：CostSUM</p>
+<img src="https://user-images.githubusercontent.com/62197237/116549304-453bbf80-a930-11eb-9a7b-97edc507784d.png" width="500px" /><br />
+<p>このマトリクスにはLLISTのデータを使用します。<br />
+ 行：SystemName<br />
+ 値：CostSUM
+</p>
 
 <h3>各種ライセンス残数(マトリクス)</h3>
-<p>このマトリクスにはELISTとLLISTのデータ、また残数を算出する為にメジャーを使用します。<br />行：SystemName(LLIST)<br />値：SystemNameのカウント(ELIST) 　<br />　：新しいメジャー(下記参照) <br />新しいメジャーというのは取り込んだデータを基に新たな集計結果を算出する為の定義です。<br />わかりやすく言えば集計されたデータ列を追加する感じです。<br />今回は保有しているライセンス数(LLIST NoofLicenses列)から使用済ライセンス数(ELIST SystemNameのカウント)を引き算するのでメジャーに入れる数式は下記になります。<br />メジャー = SUM(LLIST[NoofLicenses])-COUNTA(ELIST[SystemName])</p>
+<img src="https://user-images.githubusercontent.com/62197237/116549352-51278180-a930-11eb-834d-115aaa8160ee.png" width="500px" /><br />
+<p>このマトリクスにはELISTとLLISTのデータ、また残数を算出する為にメジャーを使用します。<br />
+ 行：SystemName(LLIST)<br />
+ 値：SystemNameのカウント(ELIST) 　<br />
+ ：新しいメジャー(下記参照) <br />
+ 新しいメジャーというのは取り込んだデータを基に新たな集計結果を算出する為の定義です。<br />
+ わかりやすく言えば集計されたデータ列を追加する感じです。<br />
+ 今回は保有しているライセンス数(LLIST NoofLicenses列)から使用済ライセンス数(ELIST SystemNameのカウント)を引き算するのでメジャーに入れる数式は下記になります。<br />
+ メジャー = SUM(LLIST[NoofLicenses])-COUNTA(ELIST[SystemName])
+</p>
 
 <h3>拠点別、部署別のシステムコスト(積上棒グラフ)</h3>
-<p>このグラフにはELISTのデータを使用します。<br />軸：Office 　<br />　：Department <br />凡例：SystemName<br />値：Value<br />軸にOfficeとDepartmentを入れることによってドリルダウンで切り替えができます。</p>
+<img src="https://user-images.githubusercontent.com/62197237/116549393-60a6ca80-a930-11eb-87d7-d5f7f808e3a3.png" width="500px" /><br />
+<p>このグラフにはELISTのデータを使用します。<br />
+ 軸：Office 　<br />
+ ：Department <br />
+ 凡例：SystemName<br />
+ 値：Value<br />
+ 軸にOfficeとDepartmentを入れることによってドリルダウンで切り替えができます。
+</p>
 
 <h3>導入システムのコスト割合(円グラフ)</h3>
-<p>このグラフにはELISTのデータを使用します。 <br />凡例：SystemName<br />値：Value</p>
+<img src="https://user-images.githubusercontent.com/62197237/116549426-6d2b2300-a930-11eb-88e9-b4ac00df4e63.png" width="500px" /><br />
+<p>このグラフにはELISTのデータを使用します。 <br />
+ 凡例：SystemName<br />
+ 値：Value
+</p>
 
 <h3>携帯総台数(カード)</h3>
-<p>このカードにはOMLISTのデータを使用します。<br />フィールド：Titleのカウント</p>
+<img src="https://user-images.githubusercontent.com/62197237/116549458-787e4e80-a930-11eb-981f-6ac321c56560.png" /><br />
+<p>このカードにはOMLISTのデータを使用します。<br />
+ フィールド：Titleのカウント
+</p>
 
 <h3>予備機台数(カード)</h3>
-<p>このカードにはOMLISTのデータを使用します。<br />またSpareFlag列の○の数のみをカウントする必要がある為、ここでもメジャーを使用します。<br />フィールド：新しいメジャー<br />携帯の総台数を見るとTitleのカウントで算出しているのがわかると思います。<br />ですので考え方としてはSpareFlagに〇が入力されているTitle列をカウントする形になります。<br />つまり数式は下記のような感じになります。<br />予備機 = CALCULATE(COUNTA(OMLIST[Title]),OMLIST[SpareFlag] IN {​​​​​​​ "○" }​​​​​​​)</p>
+<img src="https://user-images.githubusercontent.com/62197237/116549493-83d17a00-a930-11eb-867d-af6553137a5f.png" /><br />
+<p>このカードにはOMLISTのデータを使用します。<br />
+ またSpareFlag列の○の数のみをカウントする必要がある為、ここでもメジャーを使用します。<br />
+ フィールド：新しいメジャー<br />
+ 携帯の総台数を見るとTitleのカウントで算出しているのがわかると思います。<br />
+ ですので考え方としてはSpareFlagに〇が入力されているTitle列をカウントする形になります。<br />
+ つまり数式は下記のような感じになります。<br />
+ 予備機 = CALCULATE(COUNTA(OMLIST[Title]),OMLIST[SpareFlag] IN {​​​​​​​ "○" }​​​​​​​)
+</p>
 
 <h3>携帯月額コスト(カード)</h3>
-<p>このカードにはOMLISTのデータを使用します。<br />フィールド：Value</p>
+<img src="https://user-images.githubusercontent.com/62197237/116549532-90ee6900-a930-11eb-8f7d-fe8e9811bbf2.png" /><br />
+<p>このカードにはOMLISTのデータを使用します。<br />
+ フィールド：Value
+</p>
 
 <h3>拠点別・部署別携帯コスト(折れ線グラフ+積上棒グラフ)</h3>
-<p>このカードにはOMLISTのデータを使用します。<br />共有の軸：Office 　 　　<br />　　　　：Dep<br />縦棒：Career<br />各棒の値：Value<br />線の値：Titleのカウント</p>
+<img src="https://user-images.githubusercontent.com/62197237/116549608-a9f71a00-a930-11eb-9f6f-a5ba599de347.png" width="500px" /><br />
+<p>このカードにはOMLISTのデータを使用します。<br />
+ 共有の軸：Office 　 　　<br />
+ ：Dep<br />縦棒：Career<br />
+ 各棒の値：Value<br />
+ 線の値：Titleのカウント
+</p>
 
 <h3>キャリア別コスト(マトリクス)</h3>
-<p>このマトリクスにはOMLISTのデータを使用します。<br />行：Career<br />列：Office 　<br />　：Department<br />値：Value<br />列にOfficeとDepartmentを入れることによってドリルダウンで切り替えができます。</p>
+<img src="https://user-images.githubusercontent.com/62197237/116549734-d0b55080-a930-11eb-9bb6-49d5954fcac9.png" width="500px" /><br />
+<p>このマトリクスにはOMLISTのデータを使用します。<br />
+ 行：Career<br />
+ 列：Office 　<br />
+ ：Department<br />
+ 値：Value<br />
+ 列にOfficeとDepartmentを入れることによってドリルダウンで切り替えができます。
+</p>
 
 <h3>拠点別・部署別携帯保有数(マトリクス)</h3>
-<p>このマトリクスにはOMLISTのデータを使用します。<br /> 行：Model<br />列：Office 　<br />　：Department<br />値：Value<br />列にOfficeとDepartmentを入れることによってドリルダウンで切り替えができます。</p>
+<img src="https://user-images.githubusercontent.com/62197237/116549757-d9a62200-a930-11eb-9109-38da60cad35b.png" width="500px" /><br />
+<p>このマトリクスにはOMLISTのデータを使用します。<br />
+ 行：Model<br />
+ 列：Office 　<br />
+ ：Department<br />
+ 値：Value<br />
+ 列にOfficeとDepartmentを入れることによってドリルダウンで切り替えができます。
+</p>
 
 <h3>拠点別・部署別テザリングオプション導入数(マトリクス)</h3>
-<p>このマトリクスにはOMLISTのデータを使用します。<br />行：Model<br />列：Office 　<br />　：Department<br />値：Tethering <br />列にOfficeとDepartmentを入れることによってドリルダウンで切り替えができます。<br /> あとは体裁を整えればレポート完成です。</p>
+<img src="https://user-images.githubusercontent.com/62197237/116549794-e591e400-a930-11eb-8cd4-c481c467e468.png" width="500px" /><br />
+<p>このマトリクスにはOMLISTのデータを使用します。<br />
+ 行：Model<br />
+ 列：Office 　<br />
+ ：Department<br />
+ 値：Tethering <br />
+ 列にOfficeとDepartmentを入れることによってドリルダウンで切り替えができます。<br />
+</p>
+<p>あとは体裁を整えればレポート完成です。</p>
 
 <h2>レポートの発行</h2>
-<p>レポートの設定が完了しましたがまだこの時点ではクラウド上のPower BIにレポートが発行されていません。<br />画面上部からレポートの発行をしましょう。</p>
+<p>レポートの設定が完了しましたがまだこの時点ではクラウド上のPower BIにレポートが発行されていません。<br />
+ 画面上部からレポートの発行をしましょう。<br />
+ <img src="https://user-images.githubusercontent.com/62197237/116552179-b761d380-a933-11eb-8900-26a71656c809.png" /><br />
+ <img src="https://user-images.githubusercontent.com/62197237/116552187-b9c42d80-a933-11eb-997b-99bb96b20139.png" width="500px" /><br /><br />
+</p>
 
 <h2>データセットを自動更新しよう</h2>
-<p>クラウド上にレポートをアップするところまでは完了しましたが最後にデータセットの自動更新設定が必要です。<br />レポートの発行でアップしたワークスペースを開き、更新のスケジュール設定アイコンをクリックします。<br />更新頻度や時刻などを設定し、適用をクリックすれば設定完了です。</p>
+<p>クラウド上にレポートをアップするところまでは完了しましたが最後にデータセットの自動更新設定が必要です。<br />
+ レポートの発行でアップしたワークスペースを開き、更新のスケジュール設定アイコンをクリックします。<br />
+ <img src="https://user-images.githubusercontent.com/62197237/116552414-f2fc9d80-a933-11eb-99ad-0c718191f84d.png" width="500px" /><br />
+ 更新頻度や時刻などを設定し、適用をクリックすれば設定完了です。<br />
+ <img src="https://user-images.githubusercontent.com/62197237/116552474-04de4080-a934-11eb-805a-014ee00cef94.png" width="500px" /><br /><br />
+</p>
 
 <h2>作成後の注意</h2>
-<p>Power BIにはレポートをWeb公開する設定があります。<br />これは外部への一般公開のことです。<br />Power BIでは会社のクリティカルな情報を扱うことが多くなるかと思いますので、間違って一般公開をしてしまわないよう 十分注意をして下さい。<br />Power BIのWeb公開と抑止についてわかりやすくまとめた記事がありますので参考にして下さい。<br />[Power BIのWeb公開と抑止 - Qiita]https://qiita.com/ishiayaya/items/faddbe227cea8df674b2)</p>
+<p>Power BIにはレポートをWeb公開する設定があります。<br />
+ これは外部への一般公開のことです。<br />
+ Power BIでは会社のクリティカルな情報を扱うことが多くなるかと思いますので、間違って一般公開をしてしまわないよう 十分注意をして下さい。<br />
+ Power BIのWeb公開と抑止についてわかりやすくまとめた記事がありますので参考にして下さい。<br />
+ <a href="https://qiita.com/ishiayaya/items/faddbe227cea8df674b2">Power BIのWeb公開と抑止 - Qiita<br /><br /></a>
+</p>
